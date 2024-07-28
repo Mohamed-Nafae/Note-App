@@ -14,7 +14,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.bm.docathome.noteapp.feature_note.presentation.notes.components.NoteItem
 import com.bm.docathome.noteapp.feature_note.presentation.notes.components.OrderSection
@@ -25,7 +24,7 @@ import kotlinx.coroutines.launch
 @Composable
 fun NotesScreen(
     navController: NavController,
-    viewModel: NotesViewModel = hiltViewModel()
+    viewModel: NotesViewModel
 ) {
     val state = viewModel.state.value
     val scaffoldState = rememberScaffoldState()
@@ -43,11 +42,12 @@ fun NotesScreen(
             }
         },
         scaffoldState = scaffoldState
-    ) {
+    ){ paddingValues ->
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(16.dp)
+                .padding(paddingValues)
         ) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -104,7 +104,7 @@ fun NotesScreen(
                                     message = "Note deleted",
                                     actionLabel = "Undo"
                                 )
-                                if(result == SnackbarResult.ActionPerformed) {
+                                if (result == SnackbarResult.ActionPerformed) {
                                     viewModel.onEvent(NotesEvent.RestoreNote)
                                 }
                             }

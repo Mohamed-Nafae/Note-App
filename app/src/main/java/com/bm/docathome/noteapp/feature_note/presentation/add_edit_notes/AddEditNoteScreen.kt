@@ -5,8 +5,12 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement.Absolute.spacedBy
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Save
@@ -31,12 +35,13 @@ import kotlinx.coroutines.launch
 fun AddEditNoteScreen(
     navController: NavController,
     noteColor: Int,
-    viewModel: AddEditNoteViewModel = hiltViewModel()
+    viewModel: AddEditNoteViewModel
 ) {
     val titleState = viewModel.noteTitle.value
     val contentState = viewModel.noteContent.value
 
     val scaffoldState = rememberScaffoldState()
+    val scrollState = rememberScrollState()
 
     val noteBackgroundAnimatable = remember {
         Animatable(
@@ -82,9 +87,12 @@ fun AddEditNoteScreen(
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(8.dp),
-                horizontalArrangement = Arrangement.SpaceBetween
+                    .padding(8.dp)
+                    .horizontalScroll(scrollState),
+                horizontalArrangement = Arrangement.spacedBy(10.dp)
+
             ) {
+                Box(modifier = Modifier.size(4.dp))
                 Note.noteColors.forEach { color ->
                     val colorInt = color.toArgb()
                     Box(

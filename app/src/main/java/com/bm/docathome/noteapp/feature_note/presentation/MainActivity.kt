@@ -6,13 +6,16 @@ import androidx.activity.compose.setContent
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.bm.docathome.noteapp.feature_note.presentation.add_edit_notes.AddEditNoteScreen
+import com.bm.docathome.noteapp.feature_note.presentation.add_edit_notes.AddEditNoteViewModel
 import com.bm.docathome.noteapp.feature_note.presentation.notes.NotesScreen
+import com.bm.docathome.noteapp.feature_note.presentation.notes.NotesViewModel
 import com.bm.docathome.noteapp.feature_note.presentation.util.Screen
 import com.bm.docathome.noteapp.ui.theme.NoteAppTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -25,6 +28,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             NoteAppTheme {
+                val notesViewModel = hiltViewModel<NotesViewModel>()
+                val addEditNoteViewModel = hiltViewModel<AddEditNoteViewModel>()
                 Surface(
                     color = MaterialTheme.colors.background
                 ) {
@@ -34,7 +39,7 @@ class MainActivity : ComponentActivity() {
                         startDestination = Screen.NotesScreen.route
                     ) {
                         composable(route = Screen.NotesScreen.route) {
-                            NotesScreen(navController = navController)
+                            NotesScreen(navController = navController, notesViewModel)
                         }
                         composable(
                             route = Screen.AddEditNoteScreen.route +
@@ -57,6 +62,7 @@ class MainActivity : ComponentActivity() {
                             val color = it.arguments?.getInt("noteColor") ?: -1
                             AddEditNoteScreen(
                                 navController = navController,
+                                viewModel = addEditNoteViewModel,
                                 noteColor = color
                             )
                         }
