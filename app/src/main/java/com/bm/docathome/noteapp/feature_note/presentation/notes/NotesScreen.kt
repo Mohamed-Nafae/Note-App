@@ -69,6 +69,18 @@ fun NotesScreen(
                     )
                 }
             }
+            Spacer(modifier = Modifier.height(15.dp))
+            TextField(
+                value = state.searchQuery,
+                onValueChange ={ viewModel.onEvent(NotesEvent.SearchNote(it)) },
+                modifier= Modifier.fillMaxWidth(),
+                placeholder = { Text("Search notes...") },
+                singleLine = true,
+                leadingIcon = { Icon(Icons.Default.Search, contentDescription = "Search") },
+                colors = TextFieldDefaults.textFieldColors(
+                    backgroundColor = MaterialTheme.colors.surface
+                )
+            )
             AnimatedVisibility(
                 visible = state.isOrderSectionVisible,
                 enter = fadeIn() + slideInVertically(),
