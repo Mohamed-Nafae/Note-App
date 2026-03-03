@@ -57,17 +57,33 @@ class NotesViewModel @Inject constructor(
                     isOrderSectionVisible = !state.value.isOrderSectionVisible
                 )
             }
+            is NotesEvent.SearchNote ->{
+                // Update the search query in the state
+                _state.value = state.value.copy(
+                    searchQuery = event.query
+                )
+                // Trigger a re-fetch of notes with the new search query
+                getNotes(state.value.noteOrder)
+            }
         }
     }
 
     private fun getNotes(noteOrder: NoteOrder) {
+        // Cancel any existing note-fetching job to avoid conflicts
         getNotesJob?.cancel()
         getNotesJob = noteUseCases.getNotes(noteOrder)
-            .onEach {
-            _state.value = state.value.copy(
-                notes = it,
-                noteOrder = noteOrder
-            )
-        }.launchIn(viewModelScope)
+            .onEach { notes ->// Filter the notes based on the current search query
+                val filteredNotes = if (state.value.searchQuery.isBlank()) {
+                    notes
+                } else {
+                    notes.filter {
+                        it.title.contains(state.value.searchQuery, ignoreCase = true) || it.content.contains(state.value.searchQuery, ignoreCase = true)
+                    }
+                }
+                // Update the UI state with the new list of notes and order
+                _state.value = state.value.copy(
+                    notes = filteredNotes,
+                    noteOrder = noteOrder)
+            }.launchIn(viewModelScope) // Launch the flow in the ViewModel's scope
     }
 }
