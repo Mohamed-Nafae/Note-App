@@ -35,15 +35,13 @@ Here is a glimpse of the application's interface:
       <td align="center"><b>Create Note (Purple)</b></td>
     </tr>
     <tr>
-      <td><img src="screenshots/home_sort.png" alt="Home Screen with Sort Options" width="220"/></td>
-      <td><img src="screenshots/home_notes.png" alt="Home Screen with Notes" width="220"/></td>
-      <td><img src="screenshots/create_yellow.png" alt="Create Note - Yellow" width="220"/></td>
-      <td><img src="screenshots/create_purple.png" alt="Create Note - Purple" width="220"/></td>
+      <td><img src="screenshots/Screenshot_2026-03-08-23-52-47-376_com.bm.docathome.noteapp.jpg" alt="Home Screen with Sort Options" width="220"/></td>
+      <td><img src="screenshots/Screenshot_2026-03-08-23-53-35-866_com.bm.docathome.noteapp.jpg" alt="Home Screen with Notes" width="220"/></td>
+      <td><img src="screenshots/Screenshot_2024-07-14-18-17-25-877_com.bm.docathome.noteapp.jpg" alt="Create Note - Yellow" width="220"/></td>
+      <td><img src="screenshots/Screenshot_2024-07-14-18-17-23-523_com.bm.docathome.noteapp.jpg" alt="Create Note - Purple" width="220"/></td>
     </tr>
   </table>
 </div>
-
-> **💡 Tip for setting up screenshots:** *Create a folder named `screenshots` in the root of your repository, upload your images there, and rename them to `home_sort.png`, `home_notes.png`, `create_yellow.png`, and `create_purple.png` so they render correctly in the table above.*
 
 ## 🛠️ Tech Stack & Architecture
 
