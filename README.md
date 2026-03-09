@@ -7,19 +7,19 @@
 A beautiful, colorful, and intuitive note-taking Android application built entirely with **Kotlin** and **Jetpack Compose**. Designed using the robust **MVVM (Model-View-ViewModel)** architecture, this app allows users to easily capture their thoughts, organize them with colors, and find them quickly using powerful search and sorting features.
 
 ## 🔗 Link to Application
- * [Download the App (APK)](https://github.com/Mohamed-Nafae/Note-App/releases)
 
-## ✨ Features
+- [Download the App (APK)](https://github.com/Mohamed-Nafae/Note-App/releases)
 
-* **Create & Manage Notes:** Easily add, view, and delete your notes with a single tap.
-* **Color Coding:** Personalize your notes by choosing from 5 distinct pastel colors (Orange, Yellow, Purple, Blue, Pink). The note creation screen dynamically adapts its background to your chosen color!
-* **Smart Search:** Quickly find specific notes using the built-in search bar.
-* **Advanced Sorting:** Organize your notes your way. Filter and sort by:
-  * Title
-  * Date
-  * Color
-* **Flexible Ordering:** View your sorted notes in either **Ascending** or **Descending** order.
-* **Modern UI/UX:** Clean, dark-themed main interface with vibrant, color-coded note cards built declaratively.
+## ✨ Features     
+- **Create & Manage Notes:** Easily add, view, and delete your notes with a single tap.
+- **Color Coding:** Personalize your notes by choosing from 5 distinct pastel colors (Orange, Yellow, Purple, Blue, Pink). The note creation screen dynamically adapts its background to your chosen color!
+- **Smart Search:** Quickly find specific notes using the built-in search bar.
+- **Advanced Sorting:** Organize your notes your way. Filter and sort by:
+  - Title
+  - Date
+  - Color
+- **Flexible Ordering:** View your sorted notes in either **Ascending** or **Descending** order.
+- **Modern UI/UX:** Clean, dark-themed main interface with vibrant, color-coded note cards built declaratively.
 
 ## 📸 Screenshots
 
@@ -44,19 +44,19 @@ Here is a glimpse of the application's interface:
 
 ## 🛠️ Tech Stack & Architecture
 
-* **Language:** [Kotlin](https://kotlinlang.org/)
-* **UI Toolkit:** **Jetpack Compose** for building native Android UI in a modern, declarative way.
-* **Architecture:** **MVVM (Model-View-ViewModel)** pattern to ensure a clean separation of concerns, making the codebase scalable, testable, and easy to maintain.
-* **Platform:** Android
-* **UI Design:** Material Design principles with a custom dynamic color palette.
+- **Language:** [Kotlin](https://kotlinlang.org/)
+- **UI Toolkit:** **Jetpack Compose** for building native Android UI in a modern, declarative way.
+- **Architecture:** **MVVM (Model-View-ViewModel)** pattern to ensure a clean separation of concerns, making the codebase scalable, testable, and easy to maintain.
+- **Platform:** Android
+- **UI Design:** Material Design principles with a custom dynamic color palette.
 
 ## 🚀 Getting Started
 
 To run this project locally on your machine, follow these steps:
 
 ### Prerequisites
-* [Android Studio](https://developer.android.com/studio) (Latest version recommended to fully support Jetpack Compose)
-* Android SDK
+- [Android Studio](https://developer.android.com/studio)
+- Android SDK
 
 ### Installation
 1. Clone the repository:
