@@ -7,8 +7,7 @@
 A beautiful, colorful, and intuitive note-taking Android application built entirely with **Kotlin** and **Jetpack Compose**. Designed using the robust **MVVM (Model-View-ViewModel)** architecture, this app allows users to easily capture their thoughts, organize them with colors, and find them quickly using powerful search and sorting features.
 
 ## 🔗 Link to Application
- * [Download the App (APK)](https://github.com/Mohamed-Nafae/Note-App/releases) 
- * [Visit Repository](https://github.com/Mohamed-Nafae/Note-App)
+ * [Download the App (APK)](https://github.com/Mohamed-Nafae/Note-App/releases)
 
 ## ✨ Features
 
@@ -35,10 +34,10 @@ Here is a glimpse of the application's interface:
       <td align="center"><b>Create Note (Purple)</b></td>
     </tr>
     <tr>
-      <td><img src="./screenshots/Screenshot_2026-03-08-23-52-47-376_com.bm.docathome.noteapp.jpg" alt="Home Screen with Sort Options" width="220"/></td>
-      <td><img src="./screenshots/Screenshot_2026-03-08-23-53-35-866_com.bm.docathome.noteapp.jpg" alt="Home Screen with Notes" width="220"/></td>
-      <td><img src="./screenshots/Screenshot_2024-07-14-18-17-25-877_com.bm.docathome.noteapp.jpg" alt="Create Note - Yellow" width="220"/></td>
-      <td><img src="./screenshots/Screenshot_2024-07-14-18-17-23-523_com.bm.docathome.noteapp.jpg" alt="Create Note - Purple" width="220"/></td>
+      <td><img src="./screenshots/Screenshot1.jpg" alt="Home Screen with Sort Options" width="220"/></td>
+      <td><img src="./screenshots/Screenshot2.jpg" alt="Home Screen with Notes" width="220"/></td>
+      <td><img src="./screenshots/Screenshot3.jpg" alt="Create Note - Yellow" width="220"/></td>
+      <td><img src="./screenshots/Screenshot4.jpg" alt="Create Note - Purple" width="220"/></td>
     </tr>
   </table>
 </div>
