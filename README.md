@@ -7,11 +7,9 @@
 A beautiful, colorful, and intuitive note-taking Android application built entirely with **Kotlin** and **Jetpack Compose**. Designed using the robust **MVVM (Model-View-ViewModel)** architecture, this app allows users to easily capture their thoughts, organize them with colors, and find them quickly using powerful search and sorting features.
 
 ## 🔗 Link to Application
-
 - [Download the App (APK)](https://github.com/Mohamed-Nafae/Note-App/releases)
 
 ## ✨ Features
-
 - **Create & Manage Notes:** Easily add, view, and delete your notes with a single tap.
 - **Color Coding:** Personalize your notes by choosing from 5 distinct pastel colors (Orange, Yellow, Purple, Blue, Pink). The note creation screen dynamically adapts its background to your chosen color!
 - **Smart Search:** Quickly find specific notes using the built-in search bar.
@@ -27,7 +25,7 @@ A beautiful, colorful, and intuitive note-taking Android application built entir
 Here is a glimpse of the application's interface:
 | Home Screen (Sort Options) | Home Screen (With Notes) | Create Note (Yellow) | Create Note (Purple) |
 | :---: | :---: | :---: | :---: |
-| ![Home Screen with Sort Options](./screenshots/Screenshot1.jpg) | ![Home Screen with Notes](./screenshots/Screenshot2.jpg) | ![Create Note - Yellow](./screenshots/Screenshot3.jpg) | ![Create Note - Purple](./screenshots/Screenshot4.jpg) |
+| ![Home Screen with Sort Options](screenshots/Screenshot1.jpg) | ![Home Screen with Notes](screenshots/Screenshot2.jpg) | ![Create Note - Yellow](screenshots/Screenshot3.jpg) | ![Create Note - Purple](screenshots/Screenshot4.jpg) |
 
 ## 🛠️ Tech Stack & Architecture
 
@@ -42,7 +40,7 @@ Here is a glimpse of the application's interface:
 To run this project locally on your machine, follow these steps:
 
 ### Prerequisites
-- [Android Studio](https://developer.android.com/studio) (Latest version recommended to fully support Jetpack Compose)
+- [Android Studio](https://developer.android.com/studio)
 - Android SDK
 
 ### Installation
