@@ -10,7 +10,8 @@ A beautiful, colorful, and intuitive note-taking Android application built entir
 
 - [Download the App (APK)](https://github.com/Mohamed-Nafae/Note-App/releases)
 
-## ✨ Features     
+## ✨ Features
+
 - **Create & Manage Notes:** Easily add, view, and delete your notes with a single tap.
 - **Color Coding:** Personalize your notes by choosing from 5 distinct pastel colors (Orange, Yellow, Purple, Blue, Pink). The note creation screen dynamically adapts its background to your chosen color!
 - **Smart Search:** Quickly find specific notes using the built-in search bar.
@@ -55,7 +56,7 @@ Here is a glimpse of the application's interface:
 To run this project locally on your machine, follow these steps:
 
 ### Prerequisites
-- [Android Studio](https://developer.android.com/studio)
+- [Android Studio](https://developer.android.com/studio) (Latest version recommended to fully support Jetpack Compose)
 - Android SDK
 
 ### Installation
@@ -71,5 +72,6 @@ To run this project locally on your machine, follow these steps:
 I hope you find this project useful! Feel free to grab whatever you want from this repository—whether it's copying snippets of code,
 adopting the architecture, or using the entire app as a template for your own future projects.
 I would be really thankful and happy if this helps you in your development journey!
+
 ## 📄 License
 This project is open-source and available under the [MIT License](https://opensource.org/license/MIT).
