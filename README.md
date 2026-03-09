@@ -25,23 +25,9 @@ A beautiful, colorful, and intuitive note-taking Android application built entir
 ## 📸 Screenshots
 
 Here is a glimpse of the application's interface:
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>Home Screen (Sort Options)</b></td>
-      <td align="center"><b>Home Screen (With Notes)</b></td>
-      <td align="center"><b>Create Note (Yellow)</b></td>
-      <td align="center"><b>Create Note (Purple)</b></td>
-    </tr>
-    <tr>
-      <td><img src="./screenshots/Screenshot1.jpg" alt="Home Screen with Sort Options" width="220"/></td>
-      <td><img src="./screenshots/Screenshot2.jpg" alt="Home Screen with Notes" width="220"/></td>
-      <td><img src="./screenshots/Screenshot3.jpg" alt="Create Note - Yellow" width="220"/></td>
-      <td><img src="./screenshots/Screenshot4.jpg" alt="Create Note - Purple" width="220"/></td>
-    </tr>
-  </table>
-</div>
+| Home Screen (Sort Options) | Home Screen (With Notes) | Create Note (Yellow) | Create Note (Purple) |
+| :---: | :---: | :---: | :---: |
+| ![Home Screen with Sort Options](./screenshots/Screenshot1.jpg) | ![Home Screen with Notes](./screenshots/Screenshot2.jpg) | ![Create Note - Yellow](./screenshots/Screenshot3.jpg) | ![Create Note - Purple](./screenshots/Screenshot4.jpg) |
 
 ## 🛠️ Tech Stack & Architecture
 
