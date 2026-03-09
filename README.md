@@ -7,7 +7,7 @@
 A beautiful, colorful, and intuitive note-taking Android application built entirely with **Kotlin** and **Jetpack Compose**. Designed using the robust **MVVM (Model-View-ViewModel)** architecture, this app allows users to easily capture their thoughts, organize them with colors, and find them quickly using powerful search and sorting features.
 
 ## 🔗 Link to Application
-- [Download the App (APK)](https://github.com/Mohamed-Nafae/Note-App/releases)
+- [Download the App (APK)](https://play.google.com/store/apps/details?id=com.bm.docathome.noteapp&pcampaignid=web_share)
 
 ## ✨ Features
 - **Create & Manage Notes:** Easily add, view, and delete your notes with a single tap.
